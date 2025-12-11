@@ -293,7 +293,6 @@ async def enhancify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 • Supports APK, APKM, XAPK File formats
 • XAPK Custom language selection support
 • Optimize Libs (Aka Riplibs) Support For Apk Files
-• 
 
 **Repository:** [Click here]({info.get('url', '#')})
 
