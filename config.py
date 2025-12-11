@@ -46,15 +46,15 @@ class BotConfig:
         self.PROJECTS = {
             "Enhancify": {
                 "url": "https://github.com/Graywizard888/Enhancify",
-                "description": "A powerful enhancement tool for Android apps"
+                "description": "A Ultimate Patcher tool for Android apps"
             },
             "Terminal Ex": {
                 "url": "https://github.com/Graywizard888/Terminal_EX",
-                "description": "Extended terminal with advanced features"
+                "description": " Termux-Monet Fork with Extended Android versions support"
             },
             "Custom-Enhancify-aapt2-binary": {
                 "url": "https://github.com/Graywizard888/Custom-Enhancify-aapt2-binary",
-                "description": "Custom aapt2 binary for Enhancify"
+                "description": "Custom aapt2 binary Specially for Enhancify"
             }
         }
         
