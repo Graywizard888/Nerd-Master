@@ -275,7 +275,7 @@ async def enhancify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = f"""
 📱 **Enhancify**
 
-{info.get('description', 'A powerful enhancement tool for Android apps')}
+{info.get('description', 'A Ultimate Patcher tool for Android apps')}
 
 **Features:**
 • Classic Revancify v1 UI with modern tweaks
@@ -314,7 +314,7 @@ async def terminalex_command(update: Update, context: ContextTypes.DEFAULT_TYPE)
     text = f"""
 💻 **Terminal Ex**
 
-{info.get('description', 'Extended terminal with advanced features')}
+{info.get('description', 'Termux-Monet Fork with Extended Android versions support')}
 
 **Features:**
 • Fork Of termux-monet
@@ -344,7 +344,7 @@ async def aapt2_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = f"""
 🔧 **Custom Enhancify aapt2 Binary**
 
-{info.get('description', 'Custom aapt2 binary for Enhancify')}
+{info.get('description', 'Custom aapt2 binary Specially for Enhancify')}
 
 **Features:**
 • Custom aapt2 modifications
