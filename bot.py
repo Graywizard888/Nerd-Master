@@ -278,9 +278,22 @@ async def enhancify_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 {info.get('description', 'A powerful enhancement tool for Android apps')}
 
 **Features:**
-• Enhance Android applications
-• Advanced APK modifications
-• Custom resource management
+• Classic Revancify v1 UI with modern tweaks
+• Cybernetic Green theme by Graywizard888
+• File manager-like selection interface
+• Network acceleration for faster downloads
+• Pre-release support (CLI, Patches, Options)
+• Auto-launch when updated, instantly launch when first time installed
+• Modern Tweaks For Improving Github Api Performance and Apkmirror Reliability
+• Custom Github Token Support (5000/Hr) Rate Limit
+• Rish Apk Installation Support with (Dex Optimizer/Playstore Spoof installed)
+• Custom sources management (add/edit/delete)
+• Custom Keystore Support
+• Import apps when APKMirror Api fails
+• Supports APK, APKM, XAPK File formats
+• XAPK Custom language selection support
+• Optimize Libs (Aka Riplibs) Support For Apk Files
+• 
 
 **Repository:** [Click here]({info.get('url', '#')})
 
@@ -305,9 +318,12 @@ async def terminalex_command(update: Update, context: ContextTypes.DEFAULT_TYPE)
 {info.get('description', 'Extended terminal with advanced features')}
 
 **Features:**
+• Fork Of termux-monet
 • Extended terminal capabilities
 • Advanced shell features
 • Enhanced command execution
+• Support latest android 
+
 
 **Repository:** [Click here]({info.get('url', '#')})
 
