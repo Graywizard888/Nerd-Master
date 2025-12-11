@@ -38,24 +38,24 @@ class GroupOperations:
         """Kick a member from the group"""
         try:
             if not await GroupOperations.is_bot_admin(update, context):
-                return False, "❌ I need admin privileges to kick members."
+                return False, "❌ I need admin privileges to kick members Or Ask My Master."
             
             if not await GroupOperations.is_admin(update, context):
-                return False, "❌ You need admin privileges to use this command."
+                return False, "❌ You need admin privileges to use this command or Ask my Master Graywizard."
             
             # Check if target is admin
             target_member = await context.bot.get_chat_member(update.effective_chat.id, user_id)
             if target_member.status in [ChatMember.ADMINISTRATOR, ChatMember.OWNER]:
-                return False, "❌ Cannot kick administrators."
+                return False, " I ❌ Cannot kick administrators Nor Betray My Master."
             
             await context.bot.ban_chat_member(update.effective_chat.id, user_id)
             await context.bot.unban_chat_member(update.effective_chat.id, user_id)
             
             reason_text = f"\nReason: {reason}" if reason else ""
-            return True, f"✅ User has been kicked from the group.{reason_text}"
+            return True, f"✅ I kicked User from the group.{reason_text}"
             
         except Exception as e:
-            return False, f"❌ Failed to kick member: {str(e)}"
+            return False, f"❌  Sorry,😔 I Failed to kick member: {str(e)}"
     
     @staticmethod
     async def ban_member(
