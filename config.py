@@ -70,7 +70,7 @@ class BotConfig:
             "o1-mini",
             "gpt-5.1-high",
             "gpt-5.1",
-            "gpt-5-chat",
+            "gpt-5-chat"
         ]
         
         # Gemini Models
@@ -82,7 +82,7 @@ class BotConfig:
             "gemini-2.0-flash-exp",
             "gemini-3-pro",
             "gemini-2.5-pro",
-            "gemini-2.5-flash",
+            "gemini-2.5-flash"
         ]
 
 config = BotConfig()
