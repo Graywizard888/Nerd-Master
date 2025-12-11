@@ -41,7 +41,7 @@ class GroupOperations:
                 return False, "❌ I need admin privileges to kick members Or Ask My Master."
             
             if not await GroupOperations.is_admin(update, context):
-                return False, "❌ You need admin privileges to use this command or Ask my Master Graywizard."
+                return False, "❌ You need admin privileges to use this command or Ask my Master To Promote You."
             
             # Check if target is admin
             target_member = await context.bot.get_chat_member(update.effective_chat.id, user_id)
@@ -70,11 +70,11 @@ class GroupOperations:
                 return False, "❌ I need admin privileges to ban members."
             
             if not await GroupOperations.is_admin(update, context):
-                return False, "❌ You need admin privileges to use this command."
+                return False, "❌ You need admin privileges to use this command or ask my master to promote you."
             
             target_member = await context.bot.get_chat_member(update.effective_chat.id, user_id)
             if target_member.status in [ChatMember.ADMINISTRATOR, ChatMember.OWNER]:
-                return False, "❌ Cannot ban administrators."
+                return False, "❌ Cannot ban administrators, I wont betray my admins."
             
             await context.bot.ban_chat_member(update.effective_chat.id, user_id)
             
@@ -96,7 +96,7 @@ class GroupOperations:
                 return False, "❌ I need admin privileges to unban members."
             
             if not await GroupOperations.is_admin(update, context):
-                return False, "❌ You need admin privileges to use this command."
+                return False, "❌ You need admin privileges to use this command or ask my master to promote you."
             
             await context.bot.unban_chat_member(update.effective_chat.id, user_id)
             return True, "✅ User has been unbanned. They can now rejoin the group."
@@ -117,11 +117,11 @@ class GroupOperations:
                 return False, "❌ I need admin privileges to mute members."
             
             if not await GroupOperations.is_admin(update, context):
-                return False, "❌ You need admin privileges to use this command."
+                return False, "❌ You need admin privileges to use this command or ask my master to promote you."
             
             target_member = await context.bot.get_chat_member(update.effective_chat.id, user_id)
             if target_member.status in [ChatMember.ADMINISTRATOR, ChatMember.OWNER]:
-                return False, "❌ Cannot mute administrators."
+                return False, "❌ Cannot mute administrators I wont betray my admins."
             
             permissions = ChatPermissions(can_send_messages=False)
             
@@ -160,7 +160,7 @@ class GroupOperations:
                 return False, "❌ I need admin privileges to unmute members."
             
             if not await GroupOperations.is_admin(update, context):
-                return False, "❌ You need admin privileges to use this command."
+                return False, "❌ You need admin privileges to use this command or ask my master to promote you."
             
             permissions = ChatPermissions(
                 can_send_messages=True,
@@ -193,7 +193,7 @@ class GroupOperations:
                 return False, "❌ I need admin privileges to promote members."
             
             if not await GroupOperations.is_admin(update, context):
-                return False, "❌ You need admin privileges to use this command."
+                return False, "❌ You need admin privileges to use this command or ask my master to promote you."
             
             await context.bot.promote_chat_member(
                 update.effective_chat.id,
@@ -230,7 +230,7 @@ class GroupOperations:
                 return False, "❌ I need admin privileges to demote members."
             
             if not await GroupOperations.is_admin(update, context):
-                return False, "❌ You need admin privileges to use this command."
+                return False, "❌ You need admin privileges to use this command or ask my master to promote you."
             
             await context.bot.promote_chat_member(
                 update.effective_chat.id,
@@ -261,7 +261,7 @@ class GroupOperations:
                 return False, "❌ I need admin privileges to pin messages."
             
             if not await GroupOperations.is_admin(update, context):
-                return False, "❌ You need admin privileges to use this command."
+                return False, "❌ You need admin privileges to use this command or ask my master to promote you."
             
             await context.bot.pin_chat_message(
                 update.effective_chat.id,
@@ -286,7 +286,7 @@ class GroupOperations:
                 return False, "❌ I need admin privileges to unpin messages."
             
             if not await GroupOperations.is_admin(update, context):
-                return False, "❌ You need admin privileges to use this command."
+                return False, "❌ You need admin privileges to use this command or ask my master to promote you."
             
             if message_id:
                 await context.bot.unpin_chat_message(update.effective_chat.id, message_id)
